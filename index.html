@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matias Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@135&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="hero-image" id="etusivu">
+      <nav class="navbar">
+        <div class="logo">Matias</div>
+        <div class="logo2"></div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul class="nav-links">
+          <li><a href="#etusivu">Etusivu</a></li>
+          <li><a href="#minusta">Minusta</a></li>
+          <li><a href="#projekti">Projektit</a></li>
+          <li><a href="#yhteys">Ota yhteyttä</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/tyven_tattoo/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="instagram"
+            >
+              <img src="social.png" alt="instagram" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hero-text-overlay">
+        <h1>Tyven Tattoo</h1>
+      </div>
+    </section>
+
+    <section class="content-section" id="minusta">
+      <h3 class="esittely-title">Hei olen Matias ↓</h3>
+      <div class="esittely-wrapper">
+        <img src="image/IMG_6016.jpg" alt="Profiilikuva" />
+        <div class="esittely-text">
+          <h2>
+            Olen 20v tatuointi artisti ja teen tatuointeja kotona. Mielenkiinon
+            kohteeni tatuoinneissa painoittuu Black Work, American Traditional
+            ja Cybersigilism-tyyleihin. Teen tatuointeja harrastusmielessä. Olen
+            tehnyt tatuointeja reilu vuoden ajan mutta olen piirtänyt koko
+            ikäni.
+          </h2>
+        </div>
+      </div>
+      <hr />
+      <h3 class="project-title" id="projekti">Projektit ↓</h3>
+      <div class="projects-wrapper">
+        <div class="project-item">
+          <a href="project1.html" class="project-link">
+            <img src="image/IMG_6091.jpg" alt="Projecti 1" />
+            <p>Valmiit projektit</p>
+          </a>
+        </div>
+        <div class="project-item">
+          <a href="project2.html" class="project-link">
+            <img src="image/IMG_6092.jpg" alt="Projecti 2" />
+            <p>Tulevat projektit</p>
+          </a>
+        </div>
+      </div>
+      <hr />
+      <div class="center-wrapper" id="yhteys">
+        <div class="contact-container">
+          <h4 class="contact-item">Ota yhteyttä</h4>
+          <form id="contactForm" action="lähetä" method="post">
+            <div class="form-row">
+              <label for="nimi">Nimi:</label><br />
+              <input
+                type="text"
+                id="nimi"
+                name="nimi"
+                required
+                placeholder="Esim:Timo Sakarinen"
+              />
+            </div>
+            <div class="form-row">
+              <label for="email">Sähköposti:</label><br />
+              <input
+                type="email"
+                id="sähköposti"
+                name="sähköposti"
+                required
+                placeholder="Esim:Timo@gmail.com"
+              />
+            </div>
+            <div class="form-row">
+              <label for="viesti">Viesti:</label><br />
+              <textarea
+                id="viesti"
+                name="viesti"
+                rows="6"
+                cols="40"
+                required
+                placeholder="Kirjoita tähän...."
+              ></textarea>
+            </div>
+
+            <input type="submit" value="lähetä" />
+          </form>
+          <div id="confirmationMessage" class="hidden">
+            Kiitos viestistäsi! Otan yhteyttä pian. IG:@tyven_tattoo.
+          </div>
+          <button id="scrollToTopBtn" aria-label="Palaa ylös">
+            <img src="upload-up-arrow-svgrepo-com.svg" alt="Ylös" />
+          </button>
+          <p>@My website 2025 By:Matias</p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
