@@ -1,0 +1,20 @@
+name: Build Portfolio Site
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: false  # Estetään vanha virhe
+
+      - name: List project files
+        run: ls -la
+
+
