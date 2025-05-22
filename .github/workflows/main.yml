@@ -25,16 +25,16 @@ on:
     branches: [master]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build:    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: false
-          clean: true
-          fetch-depth: 1
+          submodules: false  
+          clean: true          
+          fetch-depth: 1      
+
 
       - name: List files
         run: ls -la
