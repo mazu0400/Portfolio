@@ -12,30 +12,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: false  # Estetään vanha virhe
+          submodules: false
 
       - name: List project files
         run: ls -la
 
 
-name: Build Portfolio Site
 
-on:
-  push:
-    branches: [master]
-
-jobs:
-  build:    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          submodules: false  
-          clean: true          
-          fetch-depth: 1      
-
-
-      - name: List files
-        run: ls -la
 
