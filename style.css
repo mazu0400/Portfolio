@@ -1,7 +1,7 @@
 body,
 html {
   background-image: url(image/IMG_6102.jpg);
-  font-family: "playfair Display", serif;
+  font-family: "Playfair Display", serif;
   margin: 0;
   top: 0;
   height: 100vh;
@@ -15,7 +15,7 @@ html {
   left: 0;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5)),
-    url("image/IMG_4563.jpg 16-57-17-994.jpg");
+    url("image/IMG_4563.jpg-16-57-17-994.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -299,7 +299,7 @@ img {
   text-decoration: none;
   font-size: 22px;
   border-radius: 8px;
-  transition: opacity 0.3s ease, tranform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 .back-button:hover {
   transform: translateY(-3px);
@@ -377,6 +377,7 @@ h6 {
     padding: 2px 2px;
     font-size: 15px;
     bottom: 20px;
+    right: 7px;
   }
 }
 /*yhteyden otto lomake*/
@@ -437,7 +438,11 @@ form textarea {
   box-sizing: border-box;
   font-size: 1.1rem;
 }
-
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form textarea:hover {
+  border-color: #ff0066;
+}
 form input[type="submit"] {
   font-size: 1.2rem;
   margin-top: 1rem;
